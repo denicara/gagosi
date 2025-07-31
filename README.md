@@ -1,1 +1,1 @@
-beginning of a site for my friend
+early stages of a webpage for my friends business. expect backend later
