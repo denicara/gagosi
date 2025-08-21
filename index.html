@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -285,3 +286,283 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oakwood Floors</title>
+  <link rel="icon" href="images/OaklandWoodFlooring_Logo_Grain_M.png" type="image/x-icon">
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #D2B48C;
+      margin: 0;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 700px;
+      object-fit: cover;
+    }
+    .video-section {
+      min-height: 100vh;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+    }
+    .video-section video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .video-overlay {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      padding: 2rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+    }
+    .intro-title {
+      font-size: 6rem;
+      color: #FFC090;
+      font-weight: bold;
+    }
+    .intro-subtitle {
+      margin-top: 2rem;
+      font-size: 3rem;
+      color: #f8f8f8;
+    }
+    .intro-description {
+      font-size: 2rem;
+      color: #f0f0f0;
+    }
+    .logo-top-left {
+      position: absolute;
+      top: 15px;
+      left: 20px;
+      z-index: 2;
+      height: auto;
+      width: 140px;
+    }
+    .intro-buttons {
+      margin-top: auto;
+      margin-bottom: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+    .intro-buttons .btn {
+      font-size: 1.5rem;
+      padding: 1rem 2rem;
+      border-radius: 10px;
+    }
+    .btn-orange {
+      background-color: #F26900;
+      border-color: #F26900;
+      color: white;
+    }
+    .btn-orange:hover {
+      background-color: #A03F00;
+      border-color: #A03F00;
+    }
+    .btn-past {
+      background-color: #414DE7;
+      border-color: #414DE7;
+      color: white;
+    }
+    .btn-past:hover {
+      background-color: #a4befd;
+      border-color: #a4befd;
+    }
+    .mobile-header {
+      display: none;
+      background-color: #F26900;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.5rem;
+      font-weight: bold;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+    }
+    .light-brown-bg {
+      background-color: #F26900 !important;
+    }
+    .info-images img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .info-images p {
+      font-size: 1.5rem;
+    }
+    .contact-box {
+      background-color: #fff;
+      border-radius: 15px;
+      padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      min-height: 600px;
+    }
+    @media (max-width: 768px) {
+      .intro-title {
+        font-size: 3rem;
+      }
+      .intro-subtitle {
+        font-size: 1.75rem;
+      }
+      .intro-description {
+        font-size: 1.2rem;
+      }
+      .intro-buttons .btn {
+        width: 100%;
+        font-size: 1.25rem;
+      }
+      .logo-top-left {
+        display: none;
+      }
+      .mobile-header {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+
+<!-- Mobile Header -->
+<div class="mobile-header">Oakland Wood Floors</div>
+
+<!-- Video Background Intro Area -->
+<section class="video-section">
+  <video autoplay playsinline muted loop>
+    <source src="https://storage.googleapis.com/msgsndr/24Ee9X0cK67q8VOBLlT1/media/654fad72a94e01966d7cd541.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <img src="images/logo.png" alt="Oakwood Logo" class="logo-top-left">
+  <div class="video-overlay">
+    <h1 class="intro-title">Oakland Wood Floors</h1>
+    <p class="intro-subtitle">Metro Detroit's #1 Rated<br>Hardwood Flooring Professional</p>
+    <p class="intro-description">Bring Your Hardwood Flooring Vision to Life...<br>A Transformation You'll Cherish Forever</p>
+    <div class="intro-buttons">
+      <a href="#form-section" class="btn btn-orange">Book My FREE Estimate</a>
+      <a href="#carouselGallery" class="btn btn-past">See Our Past Projects</a>
+    </div>
+  </div>
+</section>
+
+<!-- Info Area -->
+<section class="container my-5">
+  <div class="text-center mb-4">
+    <h2>Exceptional Craftsmanship From Start to Finish</h2>
+    <p>At Oakwood Floors, we pride ourselves on the craftsmanship and care that goes into every project. From sanding to sealing, we treat your floor like a work of art.</p>
+  </div>
+  <div class="row text-center info-images">
+    <div class="col-md-4 mb-4">
+      <img src="images/drum.webp" alt="Service 1">
+      <p class="mt-2">Dustless sanding process that keeps your home clean and safe.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="images/laser.webp" alt="Service 2">
+      <p class="mt-2">Digital laser measurements guarantee fair pricing.</p>
+    </div>
+    <div class="col-md-4 mb-4">
+      <img src="images/sample.webp" alt="Service 3">
+      <p class="mt-2">Find the hue that transforms your floor into a timeless masterpiece.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Quote Area -->
+<section class="light-brown-bg text-center p-4">
+  <blockquote class="blockquote">
+    <p class="text-center mb-4">
+      "We take a 100-year-old wood floor<br>
+      And make it look Brand new<br>
+      Your 100-year-old Floor Will Look Brand new<br>
+      Uncover your floor's hidden beauty today!"
+    </p>
+    <a href="#form-section" class="btn btn-past">Contact Us</a>
+  </blockquote>
+</section>
+
+<!-- Gallery Area -->
+<section class="container-fluid my-5">
+  <h2 class="text-center mb-4">Project Gallery</h2>
+  <div id="carouselGallery" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="images/slide1.webp" class="d-block w-100 gallery-img" alt="Before">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide2.webp" class="d-block w-100 gallery-img" alt="During">
+      </div>
+      <div class="carousel-item">
+        <img src="images/slide3.webp" class="d-block w-100 gallery-img" alt="After">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselGallery" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselGallery" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
+
+<!-- More Info Area -->
+<section class="text-center mb-4">
+  <h2>Why Choose Us?</h2>
+  <p>Our experienced team uses eco-friendly materials, precision tools, and time-tested methods to bring out the best in every floor we touch. Trust us to give your home the upgrade it deserves.</p>
+</section>
+
+<!-- Contact Form -->
+<section class="light-brown-bg py-5" id="form-section">
+  <div class="container">
+    <div class="contact-box mx-auto">
+      <h3 class="text-center mb-4">Kindly fill out this form!<br><small class="text-muted">Our team will be in touch soon</small></h3>
+      <form style="max-width: 600px; margin: 0 auto;">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" required>
+        </div>
+        <div class="mb-3">
+          <label for="phone" class="form-label">Phone Number</label>
+          <input type="tel" class="form-control" id="phone" required>
+        </div>
+        <button type="submit" class="btn btn-orange w-100">Submit</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-center p-3">
+  <p>&copy; 2025 Oakwood Floors | number | address </p>
+</footer>
+
+<!-- Bootstrap JS Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+>>>>>>> afc17954f8cdcaddc7a4de17770092ee9f00483e
