@@ -13,7 +13,7 @@
       max-width: 100%;
       overflow-x: hidden;
     }
-    
+
     .gallery-img {
       width: 100%;
       height: 600px;
@@ -234,7 +234,7 @@
   }
 
 
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       body {
         padding-top: 55px; /* Match the header height */
       }
@@ -261,3 +261,9 @@
         background-attachment: scroll;
       }
     }
+
+    @media (max-width: 1000px) {
+      .hide-below-1000 {
+        display: none !important;
+      }
+}
