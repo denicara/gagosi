@@ -15,7 +15,20 @@ const thankYouMessage = document.getElementById("thankYouMessage");
 form.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  // Send form data using fetch
+  // Manual checks before fetch
+  const name = form.name.value.trim();
+  const phone = form.phone.value.trim();
+  const email = form.email.value.trim();
+
+  const nameIsValid = /^[A-Za-z\s]{2,}$/.test(name);
+  const phoneIsValid = /^\d{10}$/.test(phone);
+  const emailIsValid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+
+  if (!nameIsValid || !phoneIsValid || !emailIsValid) {
+    alert("Please enter valid details before submitting.");
+    return;
+  }
+
   const formData = new FormData(form);
 
   fetch(form.action, {

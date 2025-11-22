@@ -170,16 +170,13 @@
     <div class="contact-box mx-auto" data-aos="zoom-in">
       <h3 class="text-center mb-4">Kindly fill out this form!<br><small class="text-muted">Our team will be in touch soon</small></h3>
 
-      <!-- Thank you message (hidden by default) -->
       <div id="thankYouMessage" class="text-center text-success fs-4 fw-bold " style="display: none;">
         Request submitted. Thank you!
       </div>
 
-      <!-- Contact Form -->
       <form id="contactForm" action="https://formsubmit.co/affbb849b72c944fbf2f97efcf41182a" method="POST" style="max-width: 600px; margin: 0 auto;">
         
-        <!-- Honeypot anti-spam -->
-        <input type="text" name="_honey" style="display:none">
+        <input type="text" name="_honey" autocomplete="off" tabindex="-1" aria-hidden="true" style="display: none;">
 
         <input type="hidden" name="_captcha" value="false">
         <input type="hidden" name="_template" value="box">
@@ -187,12 +184,12 @@
 
         <div class="mb-3">
           <label for="name" class="form-label">Name</label>
-          <input type="text" class="form-control" id="name" name="name" required>
+          <input type="text" class="form-control" id="name" name="name" required parttern="[A-Za-z\s]{2,}">
         </div>
 
         <div class="mb-3">
           <label for="phone" class="form-label">Phone Number</label>
-          <input type="tel" class="form-control" id="phone" name="phone" required>
+          <input type="tel" class="form-control" id="phone" name="phone" required pattern="\d{10}">
         </div>
 
         <div class="mb-3">
@@ -210,7 +207,7 @@
   </div>
 </section>
 
-<!-- Footer -->
+
 <footer class="bg-dark text-white text-center p-3">
   <p>&copy; 2025 Oakland Wood Floors | +1 (248) 525-1722 | Metro Detroit</p>
 </footer>
